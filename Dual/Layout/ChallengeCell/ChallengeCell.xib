@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="URIAL-FONT.ttf">
+            <string>URIALFONT-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChallengeCell" customModule="Dual" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="83" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="83" height="87"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M1w-Es-xiZ">
+                        <rect key="frame" x="0.0" y="0.0" width="83" height="87"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBV-xg-kKq">
+                        <rect key="frame" x="0.0" y="0.0" width="83" height="87"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JbE-ef-0IV">
+                        <rect key="frame" x="0.0" y="0.0" width="83" height="87"/>
+                        <fontDescription key="fontDescription" name="URIALFONT-Regular" family="URIAL FONT" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="17.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JbE-ef-0IV" secondAttribute="bottom" id="8DK-L3-SEY"/>
+                <constraint firstAttribute="trailing" secondItem="M1w-Es-xiZ" secondAttribute="trailing" id="BzF-di-0fU"/>
+                <constraint firstAttribute="trailing" secondItem="CBV-xg-kKq" secondAttribute="trailing" id="Dk7-bP-h8U"/>
+                <constraint firstItem="M1w-Es-xiZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MRX-in-Spk"/>
+                <constraint firstItem="M1w-Es-xiZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="U0O-BT-g46"/>
+                <constraint firstAttribute="bottom" secondItem="CBV-xg-kKq" secondAttribute="bottom" id="U3I-vs-YJn"/>
+                <constraint firstItem="JbE-ef-0IV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZmZ-oN-ONj"/>
+                <constraint firstItem="JbE-ef-0IV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hhJ-Zt-NWO"/>
+                <constraint firstAttribute="bottom" secondItem="M1w-Es-xiZ" secondAttribute="bottom" id="isl-dS-5do"/>
+                <constraint firstAttribute="trailing" secondItem="JbE-ef-0IV" secondAttribute="trailing" id="qwV-8I-WgI"/>
+                <constraint firstItem="CBV-xg-kKq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wyG-Cg-ieU"/>
+                <constraint firstItem="CBV-xg-kKq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zwZ-wO-yJq"/>
+            </constraints>
+            <size key="customSize" width="83" height="87"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="gameImg" destination="M1w-Es-xiZ" id="L9K-Ig-JFy"/>
+                <outlet property="gameName" destination="JbE-ef-0IV" id="3km-sn-Un1"/>
+            </connections>
+            <point key="canvasLocation" x="155.79710144927537" y="57.254464285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

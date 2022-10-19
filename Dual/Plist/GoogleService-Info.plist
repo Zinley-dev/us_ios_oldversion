@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1032796875331-v4p1cur3ee8lpsqdh30ov63p34kr1jlt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1032796875331-v4p1cur3ee8lpsqdh30ov63p34kr1jlt</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCtahM9VR6l_T2VAG5zYFRCE7tPo17ar7U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1032796875331</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Dual.LLC.DualTeam2020</string>
+	<key>PROJECT_ID</key>
+	<string>dual-71608</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dual-71608.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1032796875331:ios:5e966cff389c3cb50a02f6</string>
+	<key>DATABASE_URL</key>
+	<string>https://dual-71608.firebaseio.com</string>
+</dict>
+</plist>

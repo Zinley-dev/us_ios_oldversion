@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChallengeView" customModule="Dual" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImg" destination="1cO-wP-Rs7" id="GLI-1L-Zng"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="sPe-zK-1lL"/>
+                <outlet property="messageLbl" destination="aZj-5r-B8N" id="7mg-op-ccf"/>
+                <outlet property="nameLbl" destination="Teg-yj-6IG" id="FCR-Rd-mc6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1cO-wP-Rs7">
+                    <rect key="frame" x="16" y="15" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="P7X-f6-nFH"/>
+                        <constraint firstAttribute="height" constant="40" id="ngl-B9-BkH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TyU-bg-Ibs">
+                    <rect key="frame" x="64" y="-6" width="150" height="82"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-yj-6IG">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="51"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZj-5r-B8N">
+                            <rect key="frame" x="0.0" y="53" width="150" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="DWd-7H-klN"/>
+                                <constraint firstAttribute="height" constant="29" id="fpw-rO-5hs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.1855088174" green="0.16778105500000001" blue="0.18228742479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1cO-wP-Rs7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1qF-3N-awO"/>
+                <constraint firstItem="1cO-wP-Rs7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="G3S-2P-0NW"/>
+                <constraint firstItem="TyU-bg-Ibs" firstAttribute="centerY" secondItem="1cO-wP-Rs7" secondAttribute="centerY" id="aBf-2g-jkD"/>
+                <constraint firstItem="TyU-bg-Ibs" firstAttribute="leading" secondItem="1cO-wP-Rs7" secondAttribute="trailing" constant="8" id="b45-gF-GCe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="30"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="150.72463768115944" y="449.33035714285711"/>
+        </view>
+    </objects>
+</document>
